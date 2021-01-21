@@ -1,0 +1,56 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <CheckBox
+            android:id="@+id/assignmentCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#42A88F"
+            android:fontFamily="sans-serif-thin"
+            android:paddingStart="8dp"
+            android:textColor="#42A88F"
+            android:onClick="onCheckboxClicked"
+            />
+
+        <TextView
+            android:id="@+id/assignmentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_toRightOf="@id/assignmentCheckbox"
+            android:fontFamily="sans-serif-thin"
+            android:text="Assignments"
+            android:textColor="#42A88F"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/deleteAssignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="#42A88F"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            app:backgroundTint="#42A88F"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="14dp"
+            android:onClick="onClickDelete"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
